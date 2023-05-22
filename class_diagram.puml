@@ -1,0 +1,70 @@
+@startuml
+class Main {
++ {static} void main(String[])
+}
+class tournament.Team {
+- String name
+- ArrayList<Player> players
++ String getName()
++ void setName(String)
++ ArrayList<Player> getPlayers()
++ void setPlayers(ArrayList<Player>)
+}
+class tournament.Season {
+- String name
+- Date startDate
+- Date endDate
+- ArrayList<Match> matches
+- ArrayList<Team> teams
++ String getName()
++ void setName(String)
++ Date getStartDate()
++ void setStartDate(Date)
++ Date getEndDate()
++ void setEndDate(Date)
++ ArrayList<Match> getMatches()
++ void setMatches(ArrayList<Match>)
++ ArrayList<Team> getTeams()
++ void setTeams(ArrayList<Team>)
+}
+
+tournament.Season *-- tournament.Team
+tournament.Season *-- tournament.Match
+tournament.Team o-- tournament.Player
+
+
+class tournament.Player {
+- int number
+- String name
+- String position
+- int goalCounter
++ int getNumber()
++ void setNumber(int)
++ String getName()
++ void setName(String)
++ String getPosition()
++ void setPosition(String)
++ int getGoalCounter()
++ void setGoalCounter(int)
+}
+class tournament.Match {
+- String location
+- Date date
+- Team localTeam
+- Team visitantTeam
+- int localGoalCounter
+- int visitantGoalCounter
++ String getLocation()
++ void setLocation(String)
++ Date getDate()
++ void setDate(Date)
++ Team getLocalTeam()
++ void setLocalTeam(Team)
++ Team getVisitantTeam()
++ void setVisitantTeam(Team)
++ int getLocalGoalCounter()
++ void setLocalGoalCounter(int)
++ int getVisitantGoalCounter()
++ void setVisitantGoalCounter(int)
+}
+@enduml
