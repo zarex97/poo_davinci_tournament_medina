@@ -18,6 +18,13 @@ public class Team {
         return players;
     }
 
+    public void showMembers() {
+      System.out.println(this.getName());
+      this.getPlayers().forEach(player -> {
+          System.out.println(player.getName());
+      });
+    }
+
     public void addPlayer(Player player){
       getPlayers().add(player);
       player.setTeam(this);
