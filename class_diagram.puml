@@ -1,14 +1,24 @@
 @startuml
-class Main {
-+ {static} void main(String[])
-}
-class tournament.Team {
+class tournament.Player {
+- int number
 - String name
-- ArrayList<Player> players
+- String position
+- int goalCounter
+- Team team
++ <<Create>> Player()
++ <<Create>> Player(String)
++ <<Create>> Player(String,String)
++ String showTeam()
++ Team getTeam()
++ void setTeam(Team)
++ int getNumber()
++ void setNumber(int)
 + String getName()
 + void setName(String)
-+ ArrayList<Player> getPlayers()
-+ void setPlayers(ArrayList<Player>)
++ String getPosition()
++ void setPosition(String)
++ int getGoalCounter()
++ void setGoalCounter(int)
 }
 class tournament.Season {
 - String name
@@ -27,25 +37,22 @@ class tournament.Season {
 + ArrayList<Team> getTeams()
 + void setTeams(ArrayList<Team>)
 }
-
-tournament.Season *-- tournament.Team
-tournament.Season *-- tournament.Match
-tournament.Team o-- tournament.Player
-
-
-class tournament.Player {
-- int number
+class Main {
++ {static} void main(String[])
+}
+class tournament.Team {
 - String name
-- String position
-- int goalCounter
-+ int getNumber()
-+ void setNumber(int)
+- ArrayList<Player> players
++ <<Create>> Team()
++ <<Create>> Team(String)
+- <<Create>> Team(ArrayList<Player>)
++ <<Create>> Team(String,ArrayList<Player>)
 + String getName()
 + void setName(String)
-+ String getPosition()
-+ void setPosition(String)
-+ int getGoalCounter()
-+ void setGoalCounter(int)
++ ArrayList<Player> getPlayers()
++ void showMembers()
++ void addPlayer(Player)
++ void setPlayers(ArrayList<Player>)
 }
 class tournament.Match {
 - String location
