@@ -5,6 +5,14 @@ public class Player {
     private String name;
     private String position;
     private int goalCounter;
+    private Team team;
+    public Team getTeam() {
+      return this.team;
+    }
+
+    public void setTeam(Team team) {
+      this.team = team;
+    }
 
     public int getNumber() {
         return number;
