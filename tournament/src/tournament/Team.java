@@ -18,6 +18,11 @@ public class Team {
         return players;
     }
 
+    public void addPlayer(Player player){
+      getPlayers().add(player);
+      player.setTeam(this);
+    }
+
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
     }
