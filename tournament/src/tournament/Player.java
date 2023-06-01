@@ -6,6 +6,11 @@ public class Player {
     private String position;
     private int goalCounter;
     private Team team;
+
+    public String showTeam() {
+      return this.getName() + " pertenece a " + this.getTeam().getName();
+    }
+
     public Team getTeam() {
       return this.team;
     }
