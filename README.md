@@ -11,6 +11,11 @@
 
 [-] Mostrar el marcador del partido. (getMatchStatus: void -> String )
 
+[ ] Incrementar el contador de goles del jugador del equipo que hizo el gol. (makeLocalGoal: int -> void)
+
+[ ] Incrementar el contador de goles del jugador del equipo que hizo el gol. (makeVisitantGoal: int -> void)
+
+
 
 ## Main class
 [ ] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
