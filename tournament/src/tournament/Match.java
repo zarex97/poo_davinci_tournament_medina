@@ -58,6 +58,10 @@ public class Match {
         this.visitantGoalCounter = visitantGoalCounter;
     }
 
+    public void getMatchStatus(){
+        System.out.println(getLocalTeam()," ",getLocalGoalCounter()," - ",getVisitantGoalCounter()," ",getVisitantTeam());
+    }
+  
     public void makeVisitantGoal (){
         visitantGoalCounter++;
     }
