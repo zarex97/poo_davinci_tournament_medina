@@ -78,7 +78,9 @@ public class Match {
         visitantGoalCounter++;
     }
 
-    public void makeLocalGoal(){
+    public void makeLocalGoal(int playerPosition){
+        Player playerWhoMakeGoal = getLocalTeam().getPlayers().get(playerPosition);
+        playerWhoMakeGoal.incrementGoalCounter();
         localGoalCounter++;
     }
 }

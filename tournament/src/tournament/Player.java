@@ -51,6 +51,10 @@ public class Player {
         this.goalCounter = goalCounter;
     }
 
+    public void incrementGoalCounter() {
+        goalCounter++;
+    }
+
     public Player() {
         setName("");
         setPosition("");
