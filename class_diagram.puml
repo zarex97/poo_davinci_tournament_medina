@@ -1,4 +1,45 @@
 @startuml
+class tournament.Season {
+- String name
+- Date startDate
+- Date endDate
+- ArrayList<Match> matches
+- ArrayList<Team> teams
++ String getName()
++ void setName(String)
++ Date getStartDate()
++ void setStartDate(Date)
++ Date getEndDate()
++ void setEndDate(Date)
++ ArrayList<Match> getMatches()
++ void setMatches(ArrayList<Match>)
++ ArrayList<Team> getTeams()
++ void setTeams(ArrayList<Team>)
+}
+class tournament.Match {
+- String location
+- Date date
+- Team localTeam
+- Team visitantTeam
+- int localGoalCounter
+- int visitantGoalCounter
++ String getLocation()
++ void setLocation(String)
++ Date getDate()
++ void setDate(Date)
++ Team getLocalTeam()
++ void setLocalTeam(Team)
++ Team getVisitantTeam()
++ void setVisitantTeam(Team)
++ int getLocalGoalCounter()
++ void setLocalGoalCounter(int)
++ int getVisitantGoalCounter()
++ void setVisitantGoalCounter(int)
++ int getWinner()
++ void getMatchStatus()
++ void makeVisitantGoal()
++ void makeLocalGoal()
+}
 class tournament.Player {
 - int number
 - String name
@@ -20,26 +61,6 @@ class tournament.Player {
 + int getGoalCounter()
 + void setGoalCounter(int)
 }
-class tournament.Season {
-- String name
-- Date startDate
-- Date endDate
-- ArrayList<Match> matches
-- ArrayList<Team> teams
-+ String getName()
-+ void setName(String)
-+ Date getStartDate()
-+ void setStartDate(Date)
-+ Date getEndDate()
-+ void setEndDate(Date)
-+ ArrayList<Match> getMatches()
-+ void setMatches(ArrayList<Match>)
-+ ArrayList<Team> getTeams()
-+ void setTeams(ArrayList<Team>)
-}
-class Main {
-+ {static} void main(String[])
-}
 class tournament.Team {
 - String name
 - ArrayList<Player> players
@@ -54,24 +75,7 @@ class tournament.Team {
 + void addPlayer(Player)
 + void setPlayers(ArrayList<Player>)
 }
-class tournament.Match {
-- String location
-- Date date
-- Team localTeam
-- Team visitantTeam
-- int localGoalCounter
-- int visitantGoalCounter
-+ String getLocation()
-+ void setLocation(String)
-+ Date getDate()
-+ void setDate(Date)
-+ Team getLocalTeam()
-+ void setLocalTeam(Team)
-+ Team getVisitantTeam()
-+ void setVisitantTeam(Team)
-+ int getLocalGoalCounter()
-+ void setLocalGoalCounter(int)
-+ int getVisitantGoalCounter()
-+ void setVisitantGoalCounter(int)
+class Main {
++ {static} void main(String[])
 }
 @enduml
