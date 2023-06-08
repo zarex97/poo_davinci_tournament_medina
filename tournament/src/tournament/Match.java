@@ -58,6 +58,15 @@ public class Match {
         this.visitantGoalCounter = visitantGoalCounter;
     }
 
+    public int getWinner (){
+       if (getLocalGoalCounter() > getVisitantGoalCounter()){
+           return getLocalGoalCounter();
+       } else {
+           return getVisitantGoalCounter();
+
+       }
+    }
+
     public void getMatchStatus(){
         System.out.println(getLocalTeam()," ",getLocalGoalCounter()," - ",getVisitantGoalCounter()," ",getVisitantTeam());
     }
