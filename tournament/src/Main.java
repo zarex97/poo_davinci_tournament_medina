@@ -17,6 +17,7 @@ public class Main {
         Player isabel = new Player ("Isabel");
         Player messi = new Player("Messi");
         Player diMaria = new Player ("DiMaria");
+        Player alvarez = new Player("Alvarez");
       
       
         //ArrayList<Player> playersA = new ArrayList<>();
