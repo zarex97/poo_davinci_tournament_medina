@@ -1,3 +1,4 @@
+import tournament.Match;
 import tournament.Player;
 import tournament.Team;
 
@@ -43,5 +44,11 @@ public class Main {
         teamB.showMembers();
   
       System.out.println(tomas.showTeam());
+
+        Match primerPartido = new Match();
+        primerPartido.setLocalTeam(teamA);
+        primerPartido.setVisitantTeam(teamB);
+
     }
+
 }
