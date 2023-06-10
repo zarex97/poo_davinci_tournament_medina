@@ -15,13 +15,13 @@
 
 [-] Incrementar el contador de goles del jugador del equipo que hizo el gol. (makeVisitantGoal: int -> void)
 
-[ ] Agregar constructores de Match
+[-] Agregar constructores de Match
 
 ## Main class
 [-] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
 
 [-] Hacer un gol de local y dos de visitante
 
-[ ] Mostrar el marcado e indicar quien ganó
+[-] Mostrar el marcado e indicar quien ganó
 
 ![class_diagram.png](class_diagram.png)
