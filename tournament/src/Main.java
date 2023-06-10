@@ -49,6 +49,9 @@ public class Main {
         primerPartido.setLocalTeam(teamA);
         primerPartido.setVisitantTeam(teamB);
 
+        primerPartido.makeLocalGoal(1);
+        primerPartido.makeVisitantGoal(2);
+        primerPartido.makeVisitantGoal(3);
     }
 
 }
