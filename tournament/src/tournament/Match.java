@@ -74,7 +74,9 @@ public class Match {
             +getVisitantGoalCounter()+" "+getVisitantTeam().getName());
     }
   
-    public void makeVisitantGoal (){
+    public void makeVisitantGoal (int playerPosition){
+        Player playerWhoMakeGoal = getVisitantTeam().getPlayers().get(playerPosition);
+        playerWhoMakeGoal.incrementGoalCounter();
         visitantGoalCounter++;
     }
 
