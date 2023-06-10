@@ -15,7 +15,7 @@
 
 [-] Incrementar el contador de goles del jugador del equipo que hizo el gol. (makeVisitantGoal: int -> void)
 
-
+[ ] Agregar constructores de Match
 
 ## Main class
 [ ] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
