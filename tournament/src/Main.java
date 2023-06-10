@@ -52,6 +52,10 @@ public class Main {
         primerPartido.makeLocalGoal(1);
         primerPartido.makeVisitantGoal(2);
         primerPartido.makeVisitantGoal(3);
+
+        primerPartido.getMatchStatus();
+
     }
+
 
 }
