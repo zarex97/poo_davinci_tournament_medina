@@ -18,7 +18,7 @@
 [ ] Agregar constructores de Match
 
 ## Main class
-[ ] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
+[-] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
 
 [ ] Hacer un gol de local y dos de visitante
 
