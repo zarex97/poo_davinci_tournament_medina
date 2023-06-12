@@ -72,12 +72,13 @@ public class Match {
        }
     }
 
-    public void getMatchStatus(){
-            getLocalTeam().getName() +" "+getLocalGoalCounter()+
-            " - "
-            +getVisitantGoalCounter()+" "+getVisitantTeam().getName();
+    public String getMatchStatus(){
+        return this.getLocalTeam().getName() +" "+this.getLocalGoalCounter()+
+                " - "
+                +this.getVisitantGoalCounter()+" "+this.getVisitantTeam().getName();
+
     }
-  
+        
     public void makeVisitantGoal (int playerPosition){
         Player playerWhoMakeGoal = getVisitantTeam().getPlayers().get(playerPosition);
         playerWhoMakeGoal.incrementGoalCounter();
