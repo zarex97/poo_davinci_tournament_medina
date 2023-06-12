@@ -69,4 +69,9 @@ public class Player {
         setName(name);
         setPosition(position);
     }
+
+    public Player(String name, int number){
+        setName(name);
+        setNumber(number);
+    }
 }
