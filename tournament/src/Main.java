@@ -49,7 +49,7 @@ public class Main {
         primerPartido.makeVisitantGoal(2);
         primerPartido.makeVisitantGoal(3);
 
-        primerPartido.getMatchStatus();
+        System.out.println(primerPartido.getMatchStatus());
 
     }
 

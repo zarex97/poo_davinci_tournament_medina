@@ -73,10 +73,9 @@ public class Match {
     }
 
     public void getMatchStatus(){
-        System.out.println(
             getLocalTeam().getName() +" "+getLocalGoalCounter()+
             " - "
-            +getVisitantGoalCounter()+" "+getVisitantTeam().getName());
+            +getVisitantGoalCounter()+" "+getVisitantTeam().getName();
     }
   
     public void makeVisitantGoal (int playerPosition){
