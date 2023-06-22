@@ -25,3 +25,30 @@
 [-] Mostrar el marcado e indicar quien ganó
 
 ![class_diagram.png](class_diagram.png)
+
+
+## Actualización TP
+[ ] Crear la clase Llave que hereda de Season. Tiene que definido:
+
+    - ArrayList<Equipo> getEquiposQueAvanzan()
+
+[ ] Crear la clase Grupo que hereda de Season. Tiene que definido:
+
+    - ArrayList<Equipo> getEquiposQueAvanzan()
+
+[ ] Crear la clase MatchResult
+
+    - private int localGoalCounter;
+    - private int visitantGoalCounter;
+    - getter y setters
+
+[ ] Actualizar la clase Match
+
+    - sacamos localGoalCounter y visitantGoalCounter (sus getters y setter tambien) y dejamos MatchResult result;
+
+[ ] Agregar en MatchResult
+
+    - ganoLocal(): boolean
+    - empate(): boolean
+
+[ ] modificar getWinner()
