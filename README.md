@@ -36,7 +36,7 @@
 
     - ArrayList<Equipo> getEquiposQueAvanzan()
 
-[ ] Crear la clase MatchResult
+[-] Crear la clase MatchResult
 
     - private int localGoalCounter;
     - private int visitantGoalCounter;
