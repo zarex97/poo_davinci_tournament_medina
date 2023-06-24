@@ -38,7 +38,7 @@
 
 
 ## Actualización TP
-[ ] Crear la clase Llave que hereda de Season. Tiene que definido:
+[-] Crear la clase Llave que hereda de Season. Tiene que definido:
 
     - ArrayList<Equipo> getEquiposQueAvanzan()
 
