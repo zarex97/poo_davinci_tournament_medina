@@ -24,6 +24,10 @@
 
 [-] Mostrar el marcado e indicar quien ganó
 
+[ ] Agregar teacher y student1 a teamB sin variables
+
+[ ] Agregar player lines 12-17 en teamA sin variables
+
 ![class_diagram.png](class_diagram.png)
 
 
