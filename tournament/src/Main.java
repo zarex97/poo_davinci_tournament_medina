@@ -32,10 +32,21 @@ public class Main {
             teamA.addPlayer(new Player(name));
         }
 
-        //showMembers
+        String [] teamCList =  {"Almada", "Dybala", "DePaul", "MacAllister"};
+        Team teamC = new Team("Equipo C");
+        for (String name : teamCList){
+            teamC.addPlayer(new Player(name));
+        }
+
+        String [] teamDList =  {"Pepe", "Lucio", "Mario", "Luigi"};
+        Team teamD = new Team("Equipo D");
+        for (String name : teamDList){
+            teamD.addPlayer(new Player(name));
+        }
+        
        teamA.showMembers();
       
-        teamB.showMembers();
+       teamB.showMembers();
   
       //System.out.println(tomas.showTeam());
 

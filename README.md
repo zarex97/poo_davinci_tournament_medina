@@ -28,7 +28,7 @@
 
 [ ] Agregar jugadores a teamB usando iteración
 
-[ ] Agregar jugares a teamC y teamD
+[-] Agregar jugares a teamC y teamD
 
 [ ] Agregar jugares a teamE y teamF
 
