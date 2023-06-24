@@ -46,9 +46,9 @@
 
     - sacamos localGoalCounter y visitantGoalCounter (sus getters y setter tambien) y dejamos MatchResult result;
 
-[ ] Agregar en MatchResult
+[-] Agregar en MatchResult
 
     - ganoLocal(): boolean
     - empate(): boolean
 
-[ ] modificar getWinner()
+[-] modificar getWinner()
