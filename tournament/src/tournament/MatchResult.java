@@ -28,7 +28,7 @@ public class MatchResult {
         }
 
     private int localGoalCounter;
-    private int localVisitantCounter;
+    private int visitantGoalCounter;
 
     public MatchResult() {
 
@@ -42,11 +42,10 @@ public class MatchResult {
         this.localGoalCounter = localGoalCounter;
     }
 
-    public int getLocalVisitantCounter() {
-        return localVisitantCounter;
+    public int getVisitantGoalCounter() {return visitantGoalCounter;
     }
 
-    public void setLocalVisitantCounter(int localVisitantCounter) {
-        this.localVisitantCounter = localVisitantCounter;
+    public void setVisitantGoalCounter(int visitantGoalCounter) {
+        this.visitantGoalCounter = visitantGoalCounter;
     }
 }
