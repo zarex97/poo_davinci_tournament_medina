@@ -20,20 +20,18 @@ public class Main {
         //ArrayList<Player> playersA = new ArrayList<>();
         //playersA.add(teacher);
         //playersA.add(student1);
-
-        //Team teamA = new Team("Equipo A", playersA);
+        String[] teamlistA = {"Messi", "DiMaria", "Isabel", "Isaac"};
         Team teamA = new Team("Equipo A");
-        teamA.addPlayer(messi);
-        teamA.addPlayer(diMaria);
-        teamA.addPlayer(isabel);
-        teamA.addPlayer(isaac);
-        
+        for (String name : teamlistA) {
+            teamA.addPlayer(new Player(name));
+        }
+
+        String[] teamlistB = {"Tomas", "Jogher", "Paco", "Franco"};
         Team teamB = new Team("Equipo B");
-        teamB.addPlayer(new Player("Tomas"));
-        teamB.addPlayer(new Player("Jogher"));
-        teamB.addPlayer(new Player("Paco"));
-        teamB.addPlayer(new Player("Franco"));
-        
+        for (String name : teamlistB) {
+            teamA.addPlayer(new Player(name));
+        }
+
         //showMembers
        teamA.showMembers();
       
