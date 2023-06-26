@@ -49,6 +49,12 @@ public class Main {
         for (String player: playersE){
             teamE.addPlayer (new Player(player));
         };
+      
+        Team teamF = new Team("Equipo F");
+        String [] playersF = {"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"};
+        for (String player: playersF){
+            teamF.addPlayer (new Player(player));
+        }
         
        teamA.showMembers();
       

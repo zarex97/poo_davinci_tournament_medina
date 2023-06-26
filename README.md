@@ -30,7 +30,7 @@
 
 [-] Agregar jugares a teamC y teamD
 
-[ ] Agregar jugares a teamE y teamF
+[-] Agregar jugares a teamE y teamF
 
 [ ] Agregar jugares a teamG y teamH
 
