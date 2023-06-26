@@ -57,9 +57,13 @@ public class Main {
             teamF.addPlayer (new Player(player));
         }
 
+        String [] playersG = {"Juancito","Roman","Cordoba","Clemente","Diaz"};
+        Team teamG = new Team("Equipo G", playersG);
+
+        String [] playersH = {"Aymar","Palermo","Cruz","Nacho","Ruben"};
+        Team teamH = new Team("Equipo H", playersH);
+
         //TODO: Migrar en Main las implementaciones de la creación de teams, usando el constructor (String, String[])
-        
-        //TODO: Agregar jugadorres a teamG y teamH, y el partido
 
        teamA.showMembers();
       
@@ -68,17 +72,29 @@ public class Main {
         //System.out.println(tomas.showTeam());
 
         Match primerPartido = new Match(teamA, teamB);
-
         primerPartido.makeLocalGoal(1);
         primerPartido.makeVisitantGoal(2);
         primerPartido.makeVisitantGoal(3);
-
         System.out.println(primerPartido.getMatchStatus());
 
-        //TODO: Agregar partidos entre teamC y teamD, teamE y teamF
+        Match segundoPartido=new Match(teamC,teamD);
+        segundoPartido.makeLocalGoal(0);
+        System.out.println(segundoPartido.getMatchStatus());
 
+        Match tercerPartido=new Match(teamE,teamF);
+        tercerPartido.makeVisitantGoal(1);
+        tercerPartido.makeVisitantGoal(2);
+        tercerPartido.makeLocalGoal(0);
+        tercerPartido.makeLocalGoal(3);
+        tercerPartido.makeLocalGoal(2);
+        System.out.println(tercerPartido.getMatchStatus());
 
-        //TODO: Agregar jugadorres a teamG y teamH, y el partido
+        Match cuartoPartido = new Match(teamG,teamH);
+        cuartoPartido.makeLocalGoal(2);
+        cuartoPartido.makeVisitantGoal(0);
+        cuartoPartido.makeVisitantGoal(1);
+        cuartoPartido.makeLocalGoal(3);
+        System.out.println(cuartoPartidoPartido.getMatchStatus());
 
     }
 

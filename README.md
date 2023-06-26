@@ -67,8 +67,8 @@
 
 [ ] Eliminar objetos de Player en Main
 
-[ ] Agregar partidos entre teamC y teamD, teamE y teamF
+[-] Agregar partidos entre teamC y teamD, teamE y teamF
 
-[ ] Agregar jugadorres a teamG y teamH, y el partido
+[-] Agregar jugadorres a teamG y teamH, y el partido
 
 
