@@ -33,16 +33,18 @@ public class Main {
         //System.out.println(tomas.showTeam());
 
         Match primerPartido = new Match(teamA, teamB);
+        Match segundoPartido=new Match(teamC,teamD);
+        Match tercerPartido=new Match(teamE,teamF);
+        Match cuartoPartido = new Match(teamG,teamH);
+
         primerPartido.makeLocalGoal(1);
         primerPartido.makeVisitantGoal(2);
         primerPartido.makeVisitantGoal(3);
         System.out.println(primerPartido.getMatchStatus());
 
-        Match segundoPartido=new Match(teamC,teamD);
         segundoPartido.makeLocalGoal(0);
         System.out.println(segundoPartido.getMatchStatus());
 
-        Match tercerPartido=new Match(teamE,teamF);
         tercerPartido.makeVisitantGoal(1);
         tercerPartido.makeVisitantGoal(2);
         tercerPartido.makeLocalGoal(0);
@@ -50,7 +52,6 @@ public class Main {
         tercerPartido.makeLocalGoal(2);
         System.out.println(tercerPartido.getMatchStatus());
 
-        Match cuartoPartido = new Match(teamG,teamH);
         cuartoPartido.makeLocalGoal(2);
         cuartoPartido.makeVisitantGoal(0);
         cuartoPartido.makeVisitantGoal(1);

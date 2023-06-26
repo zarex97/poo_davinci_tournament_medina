@@ -2,7 +2,28 @@
 
 # To Do
 
-## Match class
+## Season class
+[ ] Agregar método addMatch(Match) -> void
+
+
+
+## Main class
+[ ] Crear la llave cuartoFinal :: Llave
+
+[ ] Agregar los partidos a la llave cuartoFinal
+
+[ ] Pedir los equipos que avanzan a semis e imprimir equipos -> equiposSemi :: ArrayList<Team>
+
+[ ] Crear equiposCuarto :: ArrayList<Team>, y agregarle los equipos (con add, en orden)
+
+[ ] Reemplazar equipos en constructor de cada partido, usando get(id)
+
+![class_diagram.png](class_diagram.png)
+
+
+
+## Done:
+
 [-] Incrementar el contador de goles locales en Match. (makeLocalGoal: void -> void)
 
 [-] Incrementar el contador de goles visitante en Match (makeVisitantGoal: void -> void)
@@ -17,7 +38,6 @@
 
 [-] Agregar constructores de Match
 
-## Main class
 [-] Crear Match entre "Equipo A" (local) y "Equipo B" (visitante)
 
 [-] Hacer un gol de local y dos de visitante
@@ -32,10 +52,6 @@
 
 [-] Agregar jugares a teamE y teamF
 
-![class_diagram.png](class_diagram.png)
-
-
-## Actualización TP
 [-] Crear la clase Llave que hereda de Season. Tiene que definido:
 
     - ArrayList<Equipo> getEquiposQueAvanzan()
@@ -70,5 +86,3 @@
 [-] Agregar partidos entre teamC y teamD, teamE y teamF
 
 [-] Agregar jugadorres a teamG y teamH, y el partido
-
-
