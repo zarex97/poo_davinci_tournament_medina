@@ -6,64 +6,25 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        //TODO: Eliminar objetos de Player en Main
-        Player teacher = new Player("Teacher");
-        Player student1 = new Player("Student 1");
-      
-        Player sergio = new Player("Sergio");
-        Player isaac = new Player("Isaac");
-        Player isabel = new Player ("Isabel");
-        Player messi = new Player("Messi");
-        Player diMaria = new Player ("DiMaria");
-        Player alvarez = new Player("Alvarez");
-      
-      
-        //ArrayList<Player> playersA = new ArrayList<>();
-        //playersA.add(teacher);
-        //playersA.add(student1);
-        String[] teamlistA = {"Messi", "DiMaria", "Isabel", "Isaac"};
-        Team teamA = new Team("Equipo A");
-        for (String name : teamlistA) {
-            teamA.addPlayer(new Player(name));
-        }
 
-        String[] teamlistB = {"Tomas", "Jogher", "Paco", "Franco"};
-        Team teamB = new Team("Equipo B");
-        for (String name : teamlistB) {
-            teamA.addPlayer(new Player(name));
-        }
+        Team teamA = new Team("Equipo A",{"Messi", "DiMaria", "Isabel", "Isaac"});
 
-        String [] teamCList =  {"Almada", "Dybala", "DePaul", "MacAllister"};
-        Team teamC = new Team("Equipo C");
-        for (String name : teamCList){
-            teamC.addPlayer(new Player(name));
-        }
+        Team teamB = new Team("Equipos B",{"Tomas", "Jogher", "Paco", "Franco"} );
 
-        String [] teamDList =  {"Pepe", "Lucio", "Mario", "Luigi"};
-        Team teamD = new Team("Equipo D");
-        for (String name : teamDList){
-            teamD.addPlayer(new Player(name));
-        }
-      
-        Team teamE = new Team("Equipo E");
-        String [] playersE = {"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"};
-        for (String player: playersE){
-            teamE.addPlayer (new Player(player));
-        };
-      
-        Team teamF = new Team("Equipo F");
-        String [] playersF = {"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"};
-        for (String player: playersF){
-            teamF.addPlayer (new Player(player));
-        }
+        Team teamC = new Team("Equipo C",{"Almada", "Dybala", "DePaul", "MacAllister"});
+
+        Team teamD = new Team("Equipo D", {"Pepe", "Lucio", "Mario", "Luigi"});
+
+        Team teamE = new Team("Equipo E",{"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"});
+
+        Team teamF = new Team("Equipo F",{"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"});
+
 
         String [] playersG = {"Juancito","Roman","Cordoba","Clemente","Diaz"};
         Team teamG = new Team("Equipo G", playersG);
 
         String [] playersH = {"Aymar","Palermo","Cruz","Nacho","Ruben"};
         Team teamH = new Team("Equipo H", playersH);
-
-        //TODO: Migrar en Main las implementaciones de la creación de teams, usando el constructor (String, String[])
 
        teamA.showMembers();
       
@@ -94,7 +55,7 @@ public class Main {
         cuartoPartido.makeVisitantGoal(0);
         cuartoPartido.makeVisitantGoal(1);
         cuartoPartido.makeLocalGoal(3);
-        System.out.println(cuartoPartidoPartido.getMatchStatus());
+        System.out.println(cuartoPartido.getMatchStatus());
 
     }
 
