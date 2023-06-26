@@ -43,6 +43,12 @@ public class Main {
         for (String name : teamDList){
             teamD.addPlayer(new Player(name));
         }
+      
+        Team teamE = new Team("Equipo E");
+        String [] playersE = {"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"};
+        for (String player: playersE){
+            teamE.addPlayer (new Player(player));
+        };
         
        teamA.showMembers();
       

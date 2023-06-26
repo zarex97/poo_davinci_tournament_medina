@@ -24,7 +24,7 @@
 
 [-] Mostrar el marcado e indicar quien ganó
 
-[ ] Agregar jugadores a teamA usando iteración
+[-] Agregar jugadores a teamA usando iteración
 
 [ ] Agregar jugadores a teamB usando iteración
 
