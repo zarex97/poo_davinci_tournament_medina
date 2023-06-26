@@ -1,4 +1,84 @@
 @startuml
+class tournament.Match {
+- String location
+- Date date
+- Team localTeam
+- Team visitantTeam
+- MatchResult result
++ <<Create>> Match(Team,Team)
++ String getLocation()
++ void setLocation(String)
++ Date getDate()
++ void setDate(Date)
++ Team getLocalTeam()
++ void setLocalTeam(Team)
++ Team getVisitantTeam()
++ void setVisitantTeam(Team)
++ MatchResult getMatchResult()
++ void setMatchResult(MatchResult)
++ String getMatchStatus()
++ void makeVisitantGoal(int)
++ void makeLocalGoal(int)
++ String getWinner()
+}
+class tournament.Team {
+- String name
+- ArrayList<Player> players
++ <<Create>> Team()
++ <<Create>> Team(String)
+- <<Create>> Team(ArrayList<Player>)
++ <<Create>> Team(String,ArrayList<Player>)
++ <<Create>> Team(String,String[])
++ String getName()
++ void setName(String)
++ ArrayList<Player> getPlayers()
++ void showMembers()
++ void addPlayer(Player)
++ void setPlayers(ArrayList<Player>)
+}
+class tournament.Llave {
++ ArrayList<Team> getEquiposQueAvanzan()
+}
+class tournament.MatchResult {
+- int localGoalCounter
+- int visitantGoalCounter
++ <<Create>> MatchResult()
++ boolean localWin()
++ boolean tie()
++ int getLocalGoalCounter()
++ void setLocalGoalCounter(int)
++ int getVisitantGoalCounter()
++ void setVisitantGoalCounter(int)
+}
+class tournament.Grupo {
++ ArrayList<Team> getEquiposQueAvanzan()
+}
+class tournament.Player {
+- int number
+- String name
+- String position
+- int goalCounter
+- Team team
++ <<Create>> Player()
++ <<Create>> Player(String)
++ <<Create>> Player(String,String)
++ <<Create>> Player(String,int)
++ String showTeam()
++ Team getTeam()
++ void setTeam(Team)
++ int getNumber()
++ void setNumber(int)
++ String getName()
++ void setName(String)
++ String getPosition()
++ void setPosition(String)
++ int getGoalCounter()
++ void setGoalCounter(int)
++ void incrementGoalCounter()
+}
+class Main {
++ {static} void main(String[])
+}
 class tournament.Season {
 - String name
 - Date startDate
@@ -16,66 +96,8 @@ class tournament.Season {
 + ArrayList<Team> getTeams()
 + void setTeams(ArrayList<Team>)
 }
-class tournament.Match {
-- String location
-- Date date
-- Team localTeam
-- Team visitantTeam
-- int localGoalCounter
-- int visitantGoalCounter
-+ String getLocation()
-+ void setLocation(String)
-+ Date getDate()
-+ void setDate(Date)
-+ Team getLocalTeam()
-+ void setLocalTeam(Team)
-+ Team getVisitantTeam()
-+ void setVisitantTeam(Team)
-+ int getLocalGoalCounter()
-+ void setLocalGoalCounter(int)
-+ int getVisitantGoalCounter()
-+ void setVisitantGoalCounter(int)
-+ int getWinner()
-+ void getMatchStatus()
-+ void makeVisitantGoal()
-+ void makeLocalGoal()
-}
-class tournament.Player {
-- int number
-- String name
-- String position
-- int goalCounter
-- Team team
-+ <<Create>> Player()
-+ <<Create>> Player(String)
-+ <<Create>> Player(String,String)
-+ String showTeam()
-+ Team getTeam()
-+ void setTeam(Team)
-+ int getNumber()
-+ void setNumber(int)
-+ String getName()
-+ void setName(String)
-+ String getPosition()
-+ void setPosition(String)
-+ int getGoalCounter()
-+ void setGoalCounter(int)
-}
-class tournament.Team {
-- String name
-- ArrayList<Player> players
-+ <<Create>> Team()
-+ <<Create>> Team(String)
-- <<Create>> Team(ArrayList<Player>)
-+ <<Create>> Team(String,ArrayList<Player>)
-+ String getName()
-+ void setName(String)
-+ ArrayList<Player> getPlayers()
-+ void showMembers()
-+ void addPlayer(Player)
-+ void setPlayers(ArrayList<Player>)
-}
-class Main {
-+ {static} void main(String[])
-}
+
+
+tournament.Season <|-- tournament.Llave
+tournament.Season <|-- tournament.Grupo
 @enduml
