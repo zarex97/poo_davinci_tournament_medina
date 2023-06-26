@@ -48,11 +48,6 @@ public class Main {
         partidosCuarto.add(new Match(equiposCuarto.get(4), equiposCuarto.get(5)));
         partidosCuarto.add(new Match(equiposCuarto.get(6), equiposCuarto.get(7)));
 
-        Match primerPartido = new Match(teamA, teamB);
-        Match segundoPartido=new Match(teamC,teamD);
-        Match tercerPartido=new Match(teamE,teamF);
-        Match cuartoPartido = new Match(teamG,teamH);
-
 
         //Rearrange games based on new Match structure (partidosCuartos)
 
