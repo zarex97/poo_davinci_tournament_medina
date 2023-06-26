@@ -53,7 +53,11 @@ public class Team {
         setName(name);
         setPlayers(players);
     }
-
-    //TODO: En la clase Team, agregar el constructor que soporte String[] players y que itere agregando players
-
+    
+    public Team(String name, String[] playerNames) {
+        setName(name);
+        for (String playerName : playerNames) {
+            addPlayer(new Player(playerName));
+        }
+    }
 }
