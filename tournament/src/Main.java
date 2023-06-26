@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        //TODO: Eliminar objetos de Player en Main
         Player teacher = new Player("Teacher");
         Player student1 = new Player("Student 1");
       
@@ -55,12 +56,16 @@ public class Main {
         for (String player: playersF){
             teamF.addPlayer (new Player(player));
         }
+
+        //TODO: Migrar en Main las implementaciones de la creación de teams, usando el constructor (String, String[])
         
+        //TODO: Agregar jugadorres a teamG y teamH, y el partido
+
        teamA.showMembers();
       
        teamB.showMembers();
   
-      //System.out.println(tomas.showTeam());
+        //System.out.println(tomas.showTeam());
 
         Match primerPartido = new Match(teamA, teamB);
 
@@ -69,6 +74,11 @@ public class Main {
         primerPartido.makeVisitantGoal(3);
 
         System.out.println(primerPartido.getMatchStatus());
+
+        //TODO: Agregar partidos entre teamC y teamD, teamE y teamF
+
+
+        //TODO: Agregar jugadorres a teamG y teamH, y el partido
 
     }
 
