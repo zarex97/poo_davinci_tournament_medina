@@ -3,12 +3,25 @@ package tournament;
 import java.util.ArrayList;
 
 public class Team {
+
+    private int puntos;
+
+
     private String name;
     private ArrayList<Player> players;
 
+
+    public int getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
+    }
     public String getName() {
         return name;
     }
+
 
     public void setName(String name) {
         this.name = name;
@@ -53,9 +66,10 @@ public class Team {
         setName(name);
         setPlayers(players);
     }
-    
+
     public Team(String name, String[] playerNames) {
         setName(name);
+        this.players = new ArrayList<>();
         for (String playerName : playerNames) {
             addPlayer(new Player(playerName));
         }
